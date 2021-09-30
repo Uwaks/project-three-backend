@@ -1,4 +1,5 @@
 import express from 'express'
+import cors from 'cors'
 import router from './config/router.js'
 import { connectToDb } from './db/helpers.js'
 import logger from './lib/logger.js'
@@ -8,6 +9,7 @@ import { port } from './config/environment.js'
 const app = express()
 
 app.use(express.json())
+app.use(cors())
 app.use('/', logger)
 app.use('/api', router)
 app.use(errorHandler)
