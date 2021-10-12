@@ -36,7 +36,7 @@ Access the source code via the 'clone or download' button
 
 ## Demonstration/cover image 
 
-![screenshot](src/assets/screenshot.png)
+![screenshot](https://github.com/Uwaks/project-three-frontend/blob/main/src/assets/screenshot.png)
 
 ## Technologies Used
 
@@ -52,13 +52,13 @@ Access the source code via the 'clone or download' button
 ## User Journey
 
 **_User registration_**
-<img src="src/assets/register.png" width="200" height="350">
+<img src="https://github.com/Uwaks/project-three-frontend/blob/main/src/assets/register.png" width="200" height="350">
 
 **User login**
-<img src="src/assets/login-form.png" width="200" height="200">
+<img src="https://github.com/Uwaks/project-three-frontend/blob/main/src/assets/login-form.png" width="200" height="200">
 
 **Creating a pub**
-<img src="src/assets/create-a-pub.png" width="150" height="300">
+<img src="https://github.com/Uwaks/project-three-frontend/blob/main/src/assets/create-a-pub.png" width="150" height="300">
 
 ## Process
 
@@ -70,13 +70,13 @@ We initially toyed with the idea of including other events happening in the same
 
 Once we had agreed on the candidate idea, we produced detailed wireframes of the app's frontend, highlighting the differing views available for logged in and guest users.
 
-![wireframe](src/assets/wireframe.png)
+![wireframe](https://github.com/Uwaks/project-three-frontend/blob/main/src/assets/wireframe.png)
 
 ### Project Management
 
 All of our project management tasks were done using a shared Trello board, the first change we had to make was in the distribution of tasks. Initially building the Express API was a joint task, but this was found to be inefficient and prone to errors, so one team member was given the task of building the backend whilst the other two focused on building the seed data and building the front end.
 
-![screencast](src/assets/trello-board.png)
+![screencast](https://github.com/Uwaks/project-three-frontend/blob/main/src/assets/trello-board.png)
 
 ### Build Stage
 
@@ -247,7 +247,7 @@ The first thing we did on the frontend was to create the static React components
 
 The ClubIndex component displayed all the clubs in the database and contained the logic to show views filtered by league or by entering the club name in the search bar.
 
-![search](src/assets/search-clubs.png)
+![search](https://github.com/Uwaks/project-three-frontend/blob/main/src/assets/search-clubs.png)
 
 The PubForm component logic proved to be particularly complicated to set up as one of the required fields was an image of the pub. This was achieved using cloudinary, a web app which provides an api for digital media management. It also required passing data from a child component to it's parent, something I hadn't done before. I created an image uploader component with all the required logic and passed it an image upload function as a prop from the PubForm component. When the function was invoked (onChange event) it sent the data (url from cloudinary) up to the PubForm, where it is then submitted as part of the form data. 
 
